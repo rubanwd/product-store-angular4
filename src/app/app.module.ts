@@ -6,7 +6,10 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { EditPageComponent } from './edit-page/edit-page.component';
 import { SinglePageComponent } from './single-page/single-page.component';
 
+import { ProductsService }          from './products.service';
+
 import { AppRoutingModule }     from './app-routing.module';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,10 @@ import { AppRoutingModule }     from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule.forRoot()
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,37 @@
+.top-filer {
+	background-color: #ccc;
+	padding: 20px;
+	margin-bottom: 50px;
+}
+.product {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	cursor: pointer;
+}
+.product a {
+	text-decoration: none;
+	color: #000;
+}
+.product a:hover {
+	color: #000;
+}
+.product p {
+	font-weight: bold;
+}
+.product li {
+	list-style-type: none;
+  	min-height: 360px;
+  	border: 2px solid #fff;
+}
+.product li:hover {
+  	border: 2px solid #E4E4E4;
+}
+
+.product-description {
+  height: 160px;
+}
+.thumb img {
+  width: 150px;
+  margin-top: 20px;
+}

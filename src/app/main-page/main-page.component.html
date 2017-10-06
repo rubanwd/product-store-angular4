@@ -1,3 +1,45 @@
-<p>
-  main-page works!
-</p>
+<div class="container">
+  <div class="row">
+    <h1>Main</h1>
+    <div class="col-md-12 top-filer">
+
+       <div class="form-group row">
+        <div class="col-md-3">
+          <label for="ex1">Search:</label>
+          <input class="form-control" />
+        </div>
+        <div class="col-md-3">
+          <label for="ex2">Sort by:</label>
+          <select class="form-control" >
+            <option value="name">Alphabetical</option>
+            <option value="age">Newest</option>
+          </select>
+        </div>
+      </div> 
+
+    </div>
+    
+    <div class="col-md-12">
+      
+      <div class="row">
+         <ul class="product">
+            <li class="col-md-3 col-sm-6" *ngFor="let product of products">
+
+				      <a href="/single-product/{{product._id}}" class="thumb">
+
+                <img class="thumb" src="./assets/{{product.images[0]}}" alt="{{product.name}}" />
+
+
+                <h4>{{product.name}}</h4>
+
+               
+              	 <p>{{product.snippet}}</p>
+				      </a>
+
+            </li>
+         </ul>
+      </div> 
+
+    </div>
+  </div>
+</div>

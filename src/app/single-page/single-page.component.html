@@ -1,3 +1,18 @@
-<p>
-  single-page works!
-</p>
+<div class="container">
+	
+	<img src="./assets/{{mainImageUrl}}" class="single-product" />
+
+	<h1>{{product.name}}</h1>
+
+	<ul class="single-product-thumbs">
+	  <li *ngFor="let img of product.images">
+	    <img src="./assets/{{img}}" (click)="setImg(img)"/>
+	  </li>
+	</ul>
+
+	<h4 class="price">Price: {{product.price | currency}}</h4>
+
+	<p>{{product.description}}</p>
+
+</div>
+

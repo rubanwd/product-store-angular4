@@ -9,12 +9,13 @@ import { SinglePageComponent }  from './single-page/single-page.component';
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'main',  component: MainPageComponent },
-  { path: 'single-product/:id', component: EditPageComponent },
-  { path: 'edit',     component: SinglePageComponent }
+  { path: 'single-product/:id', component: SinglePageComponent },
+  { path: 'edit',     component: EditPageComponent }
 ];
 
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
+
 export class AppRoutingModule {}
